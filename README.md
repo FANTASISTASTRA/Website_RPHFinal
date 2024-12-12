@@ -8,7 +8,9 @@ next Click the NEXTFILE
 then after that just click the code<>
 
 after that open the codespaces 
-then in codespaces find the Legendarygoldfish 
+then in codespaces find the Legendarygoldfish
+
+you navigate it then look for hovering button "..." then "find the click open in Visual Code Studio"
 
 if you access the linked browser of vstudio just click the live server
 
