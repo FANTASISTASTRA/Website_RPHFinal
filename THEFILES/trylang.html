@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIDA - Philippine Historical Timeline</title>
+    <link rel="stylesheet" href="homecss.css">
+    <style>
+        /* Base styles */
+        body {
+            margin: 0;
+            font-family: Quiapo;
+            
+        }
+
+        @font-face {
+            font-family: Quiapo;
+            src: url(Quiapo_Free.ttf);
+        }
+        h1 {-webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgb(0, 0, 0);}
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #00000091;
+            color: white;
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        .menu {
+            cursor: pointer;
+        }
+
+        /* Fullscreen menu overlay */
+        .menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            color: white;
+            transition: transform 0.3s ease-in-out;
+            transform: translateY(-100%);
+        }
+
+        .menu-overlay.open {
+            transform: translateY(0);
+        }
+
+        .menu-overlay button,
+        .menu-overlay a {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            padding: 10px 20px;
+            margin: 10px 0;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .menu-overlay button:hover,
+        .menu-overlay a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        /* Hero section styles */
+        .hero {
+            position: relative;
+            height: 100vh;
+            background: url('https://source.unsplash.com/1600x900/?history') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            margin-top: 20%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-container">
+            <img src="https://i.ibb.co/7KPR30S/b723475a-9053-478e-8b6c-ff1fbada08a9-removebg-preview.png" alt="AIDA Logo" class="logo">
+            <div class="menu">
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Fullscreen Menu -->
+    <div id="menuOverlay" class="menu-overlay">
+        <a href="SearchBar.html">Search</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <button onclick="closeMenu()">Close</button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1 style="font-size: 150px;">A I D A</h1><br>
+            <h2>AN INDEX of DETAILED ARCHIVES</h2>
+            <p>Documenting the Philippine Historical Timeline</p>
+        </div>
+    </section>
+
+    <script>
+        // Function to toggle the full-screen menu
+        function toggleMenu() {
+            const menuOverlay = document.getElementById('menuOverlay');
+            menuOverlay.classList.add('open');
+        }
+
+        // Function to close the menu
+        function closeMenu() {
+            const menuOverlay = document.getElementById('menuOverlay');
+            menuOverlay.classList.remove('open');
+        }
+    </script>
+</body>
+</html>

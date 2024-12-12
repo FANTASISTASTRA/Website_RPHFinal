@@ -1,0 +1,29 @@
+table.tab{padding-left: 5%; margin-left:5%;}
+.logos{border-radius: 80%; height: 100px;}
+.nav{background-color: aquamarine; 
+    text-align:center; max-width: 70%; margin:auto;}
+.toc{position:fixed; width:13%;
+    padding-left:1%;padding-right: 1%; float: left; border: 2px solid black; margin-top: 1%;
+    margin-left:2%; background-color: burlywood; text-align: center;font-family: Maragsa;}
+.content{font-family:'Times New Roman', Times, serif;
+    border: 1px solid black; width:80%; float:right; margin-top: 1%;
+    margin-left: 15%; background-color: #ffd633;}
+.navarw{max-width:80%;}
+.respic{float:left; max-width: 100%; max-height:100%;}
+.inside{padding-left: 20px; padding-top: 1%; font-size: 140%;
+text-align: justify; padding-right: 5px;}
+.ref{font-family:'Times New Roman', Times, serif;
+    background-color:lavender; width:70%;
+    border: 2px solid black;float: inline-end; text-align: justify; padding-left: 1%;}
+.aida{width: 30%; padding-left: 5%;}
+body{background-color: #9933ff;}
+td.inside{padding-top:10px;padding-left: 15px;font-size: 100%; text-align: justify; padding-bottom: 5%; padding-top: 5%;}
+.tocon{margin: auto;font-size: large;}
+.restd{padding-bottom: 10%;}
+.restd:hover{background-color: aliceblue;}
+.arrw:hover{background-color:#ffd633;}
+.yeartd{background-color: bisque; font-family: Maragsa;}
+@font-face {
+    font-family: Maragsa;
+    src: url(Maragsa.otf);
+  }

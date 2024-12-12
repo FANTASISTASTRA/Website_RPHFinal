@@ -1,0 +1,39 @@
+body{background-image: url(Resultbg.png);background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;}
+@font-face {font-family: Maragsa;src: url(Maragsa.otf);}
+@font-face {font-family: Quezon;src: url(Quezon.ttf);}
+
+
+table.tab{padding-left: 5%; margin-left:5%; background-color: rgba(6, 72, 120, 0.242);}
+.logos{border-radius: 80%; height: 100px;}
+.aida{width: 30%; padding-left: 5%;}
+
+
+.toc{position:fixed; width:13%;
+    padding-left:1%;padding-right: 1%; float: left; border: 2px solid black; margin-top: 1%;
+    margin-left:2%; background-color: rgba(20, 8, 39, 0.557); text-align: center;font-family: Maragsa;}
+.toc a{color: aliceblue;}
+.tocon{margin: auto;font-size: large;}
+.nav{background-color: rgb(0, 120, 239); 
+    text-align:center; max-width: 70%; margin:auto;}
+.navarw{max-width:80%;}
+.arrw:hover{background-color:#ffd633;}
+.restd{padding-bottom: 10%;}
+.restd:hover{background-color: rgb(224, 138, 0);}
+
+
+.content{font-family:'Times New Roman', Times, serif;
+    border: 1px solid black; width:80%; float:right; margin-top: 1%;
+    margin-left: 15%; background-color: #12728d85;}
+.respic{float:left; max-width: 100%; max-height:100%;}
+.inside{padding-left: 20px; padding-top: 1%; font-size: 140%;
+text-align: justify; padding-right: 5px;}
+td.inside {background-color: rgba(252, 213, 72, 0.849); padding-right: 20px;padding-top:10px;padding-left: 15px;font-size: 100%;
+            text-align: justify; padding-bottom: 5%; padding-top: 5%; font-family: Quezon;}
+.yeartd{background-color: rgba(252, 213, 72, 0.849); font-family: Maragsa; font-size: larger;} 
+
+
+.reftab td{padding-right:20px;float:lef; text-align: justify; width: auto;}
+.ref{font-family:'Times New Roman', Times, serif;
+    background-color:rgb(7, 220, 209); width:70%;
+    border: 2px solid black;float: inline-end; text-align: justify; padding-left: 1%; padding-bottom: 20px; padding-top: 20px;}
+    
